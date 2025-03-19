@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: rgb(0, 185, 241);
+    --dark-blue: rgb(0, 46, 110);
+    --gray: rgb(240 240 240);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue);
+    border-radius: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+body,
+button,
+h1,
+h2,
+input,
+pre,
+select,
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* tailwind */
+@layer utilities {
+    .paused {
+        animation-play-state: paused;
+    }
+}
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

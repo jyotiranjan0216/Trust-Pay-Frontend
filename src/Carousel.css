@@ -1,0 +1,29 @@
+.carousel .control-arrow {
+    background-color: rgba(40, 39, 39, 0.5);
+    /* Semi-transparent white background */
+    /* border-radius: 50%; Make arrows circular */
+    /* width: 30px; Set width */
+    height: 30%;
+}
+
+/* Increase opacity on hover */
+/* .carousel .control-arrow:hover {
+    background-color: rgba(39, 38, 38, 0.8);
+} */
+
+.carousel .control-prev.control-arrow {
+    /* left: 15px; Adjust left position */
+    background-color: rgba(184, 181, 181, 0.8);
+}
+
+.carousel .control-next.control-arrow {
+    /* right: 15px; Adjust right position */
+    background-color: rgba(184, 181, 181, 0.8);
+}
+
+.carousel .control-prev.control-arrow:hover,
+.carousel .control-next.control-arrow:hover
+ {
+    /* left: 15px; Adjust left position */
+    background-color: rgba(39, 38, 38, 0.8);;
+}

@@ -1,0 +1,17 @@
+.learn-more{
+    max-width: 200px;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #002970;
+
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+}
+
+.learn-more:hover,
+.learn-more:focus{
+    cursor: pointer;
+    background-color: var(--light-blue);
+}

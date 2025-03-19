@@ -1,0 +1,142 @@
+.section1-wrapper{
+    background-color: #5CADFF;
+}
+
+.message{
+    font-size: 1rem;
+    margin-inline: auto;
+    text-align: center;
+
+    background-color: #6db5fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.emoji{
+    font-size: 1.5rem;
+    padding-inline: .5rem;
+}
+
+.message a{
+    text-decoration: none;
+    color: black;
+}
+
+.section1-container{
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 5rem;
+    padding-inline: 2rem;
+    /* background-color: antiquewhite; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+}
+
+.section1-message{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+.section1-message img{
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+}
+
+.section1-message h1{
+    font-size: 3.5rem;
+}
+
+.section1-message p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-top: 0;
+    
+}
+
+.section1-message button{
+    margin-top: 2em;
+}
+
+.download-app{
+    width: max-content;
+    font-size: 1.25rem;
+    padding: .75em;
+    color: white;
+    background-color: black;
+
+    border: none;
+    outline: 1px solid black;
+    border-radius: 2rem;
+
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-app:hover,
+.download-app:focus{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.download-app:hover svg path,
+.download-app:focus svg path{
+    fill: #101010;
+}
+
+.section1-image img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (width <= 1024px){
+    .section1-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-block: 3rem;
+        row-gap: 2rem;
+        column-gap: 0;
+    }
+
+    .message{
+        font-size: .8rem;
+    }
+
+    .emoji{
+        font-size: 1rem;
+    }
+
+    .section1-message{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section1-message h1{
+        font-size: 2rem;
+    }
+
+    .section1-message p{
+        font-size: 1.125rem;
+        height: 100%;
+        width: fit-content;
+    }
+
+    .section1-image{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}

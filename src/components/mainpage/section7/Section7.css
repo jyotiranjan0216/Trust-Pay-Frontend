@@ -1,0 +1,39 @@
+.section7-wrapper{
+    /* padding-top: .5rem; */
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color: #5CADFF;
+}
+
+.section7-wrapper > h1{
+    margin-inline: auto;
+    margin-block-start: 4rem;
+    width: 62.5%;
+
+    text-align: start;
+    font-size: 3rem;
+}
+
+.section7-container{
+    width: 62.5%;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+
+@media screen and (width <= 1024px){
+
+    .section7-wrapper > h1{
+        font-size: 2rem;
+    }
+
+    .section7-container{
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+
+
+}

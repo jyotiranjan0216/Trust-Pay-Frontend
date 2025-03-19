@@ -1,0 +1,33 @@
+.section8-wrapper {
+    padding-block: 4rem;
+    background-color: white;
+}
+
+.section8-container {
+    width: 70%;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.row2 {
+    /* display: flex;
+    flex-flow: row nowrap; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+    gap: 1rem;
+    margin-bottom: 4rem;
+}

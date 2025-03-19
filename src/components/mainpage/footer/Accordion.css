@@ -1,0 +1,95 @@
+.accordion{
+    display: flex;
+    flex-direction: row;
+    column-gap: .5rem;
+    position: relative;
+    padding-block: 1rem;
+    /* border: 1px solid red; */
+}
+
+.accordion:focus,
+.accordion:hover{
+    cursor: pointer;
+}
+
+.accordion::before{
+    content: "+";
+    transition: all 300ms ease-in-out;
+    font-size: 2.25rem;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-52%);
+    left: 0;
+    /* border: 1px solid violet; */
+}
+
+.accordion.active::before{
+    content: "-";
+    font-size: 2.25rem;
+}
+
+.accordion[data-noBody="true"]::before{
+    display: none;
+}
+
+.accordion h4{
+    /* border: 1px solid green; */
+    margin-block: auto;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    margin-inline-start: 2rem;
+}
+
+.line{
+    display: flex;
+    flex-grow: 1;
+    height: 1px;
+    align-self: flex-end;
+    background-color: grey;
+    /* border: 1px solid green; */
+}
+
+.accordion-body{
+    display: none;
+    height: 0;
+    
+    padding: 2rem 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    gap: 4rem;
+    
+    
+}
+
+.accordion-body a{
+    text-decoration: none;
+    color: #777;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+.accordion-body a:hover{
+    color: black;
+}
+
+.accordion.active + .accordion-body{
+    display: grid;
+    height: auto;
+}
+
+.accordion[data-noBody="true"] + .accordion-body{
+    display: none;
+}
+
+@media screen and (width <= 1024) {
+
+    .accordion-body{
+        padding: 1rem;
+        gap: 2rem;
+    }
+    
+}

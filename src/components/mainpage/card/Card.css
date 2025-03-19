@@ -1,0 +1,30 @@
+.card-cont{
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+}
+
+.card-cont:hover{
+    cursor: pointer;
+    background-color: #0d3e80;
+}
+
+div[data-color="dark"]:hover{
+    background-color: #00B9F1;
+}
+
+.card-body{
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: white;
+}
+
+.card-body img{
+    width: 64px;
+    margin: 1rem;
+}
+
+.card-body p{
+    line-height: 1.50;
+    margin-inline: 1rem; 
+    /* margin-bottom: 0; */
+}

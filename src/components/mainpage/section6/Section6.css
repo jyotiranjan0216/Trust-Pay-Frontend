@@ -1,0 +1,38 @@
+.section6-wrapper{
+    /* padding-top: .5rem; */
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color: #5CADFF;
+}
+
+.section6-wrapper > h1{
+    margin-inline: auto;
+    margin-block-start: 6rem;
+    margin-bottom: 50px;
+    width: 62.5%;
+
+    text-align: start;
+    font-size: 3rem;
+}
+
+.section6-container{
+    width: 70%;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+@media screen and (width <= 1024px){
+
+    .section6-wrapper > h1{
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    .section6-container{
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,58 @@
+.mini-card-container{
+    margin: 0;
+    padding: 0;
+}
+
+.bank-card-link{
+    margin: 0;
+    padding: 1rem 3rem;
+    padding-bottom: 0;
+
+    text-decoration: none;
+    color: black;
+
+
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #B5F0FF;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.bank-card-link[data-pad="true"]{
+    padding-block-start: 5rem;
+}
+
+.bank-card-link h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.bank-card-link p{
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.bank-image{
+    width: 200px;
+}
+
+.bank-card-image{
+    max-width: 100%;
+    height: auto;
+    /* aspect-ratio: 1; */
+    object-fit: cover;
+}
+
+@media screen and (width <= 1024px){
+
+    .bank-card-link{
+        padding-right: 1rem;
+    }
+
+    .bank-card-link h1{
+        font-size: 2rem;
+    }
+}

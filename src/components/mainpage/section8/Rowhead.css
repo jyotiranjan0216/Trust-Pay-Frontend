@@ -1,0 +1,29 @@
+.row-container{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    /* border: 1px solid green; */
+}
+
+.row-image{
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-block-end: 2rem;
+    /* border: 1px solid red; */
+}
+
+.row-container > p{
+    font-size: 1.125rem;
+    line-height: 1.25;
+    /* border: 1px solid red; */
+}
+
+.para-link{
+    font-size: 1.25rem;
+    color: var(--light-blue);
+    text-decoration: none;
+}

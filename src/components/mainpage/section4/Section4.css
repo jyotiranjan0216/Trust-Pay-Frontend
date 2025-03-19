@@ -1,0 +1,54 @@
+.section4-wrapper{
+    padding-top: .5rem;
+    background-color: #5CADFF;
+    padding-bottom: 4rem;
+}
+
+.section4-wrapper > h1{
+    margin-inline: auto;
+    margin-block-start: 6rem;
+    margin-bottom: 50px;
+    width: 62.5%;
+
+    text-align: start;
+    font-size: 3rem;
+}
+
+.section4-container{
+    width: 70%;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.mini-card-row{
+    margin-block: 0;
+    padding: 0;
+    width: 90%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+}
+
+@media screen and (width <= 1024px){
+
+    .section4-wrapper > h1{
+        width: 90%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .section4-container{
+        width: 90%;
+    }
+
+    .mini-card-row{
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+}

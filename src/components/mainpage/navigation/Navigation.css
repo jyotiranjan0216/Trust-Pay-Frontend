@@ -1,0 +1,144 @@
+.navigation{
+    padding-inline: 6rem;
+    padding-block: 0.75rem;
+    color: black;
+    background-color: #2793fe;
+    box-shadow: 0 2px 20px #88888844;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    font-size: 1.125rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.hamburger-nav{
+    display: none;
+    /* display: block; */
+    border: none;
+    background: transparent;
+
+    font-size: 2rem;
+    margin-inline-end: 2rem;
+}
+
+.hamburger-nav:hover{
+    cursor: pointer;
+}
+
+/* .hamburger-nav:active{
+    box-shadow: inset 2px 2px 5px #555;
+} */
+
+.logo > img{
+    max-width: 175px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+    column-gap: 1rem;
+    padding-inline: auto;
+    margin-inline-end: 4rem;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: black;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.nav-items a:hover,
+.nav-items a:focus{
+    background-color: #eee;
+}
+
+.sign-in{
+    outline: none;
+    background-color: var(--light-blue);
+    border: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 0.125rem;
+    padding-block: .175rem;
+    margin-inline-end: 1rem;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.sign-in:hover,
+.sign-in:focus{
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
+
+@media screen and (width <= 1024px){
+
+    .navigation{
+        /* width: 100%; */
+        column-gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .hamburger-nav{
+        display: block;
+        margin: 0;
+    }
+
+    .logo > img{
+        max-width: 120px;
+    }
+
+    .nav-items{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        
+        flex-grow: 0;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        background-color: white;
+        border-bottom: 1px solid var(--light-blue);
+        border-right: 1px solid var(--light-blue);
+        
+        padding-block: 2rem;
+
+        transform: translateY(-10px);
+        transition: all 300ms ease-in-out;
+        opacity: 0;
+    }
+
+    .nav-items > *{
+        width: 100%;
+        border-bottom: 1px solid var(--light-blue);
+    }
+
+    .nav-items.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sign-in{
+        margin-inline-end: 1rem;
+    }
+
+}
