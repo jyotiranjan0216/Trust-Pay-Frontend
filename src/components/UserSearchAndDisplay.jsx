@@ -7,7 +7,7 @@ export function UserSearchAndDisplay({loggedInUser, userBalance}) {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/api/v1/user/bulk?filter=${filter}`)
+        axios.get(`https://trust-pay-backend-lx2m.onrender.com/api/v1/user/bulk?filter=${filter}`)
             .then((res) => {
                 setUsers(res.data.user);
             })
